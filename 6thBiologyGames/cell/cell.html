@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧬 Cell Explorer</title>
+  <link rel="stylesheet" href="cell.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🧬 Cell Explorer</h1>
+    <p>Drag the organelles to the correct cell type (Plant or Animal)!</p>
+
+    <div class="boxes">
+      <div class="dropbox" id="plant">Plant Cell</div>
+      <div class="dropbox" id="animal">Animal Cell</div>
+    </div>
+
+    <div class="items">
+      <div class="item" draggable="true">Cell Wall</div>
+      <div class="item" draggable="true">Chloroplast</div>
+      <div class="item" draggable="true">Nucleus</div>
+      <div class="item" draggable="true">Mitochondria</div>
+      <div class="item" draggable="true">Vacuole</div>
+    </div>
+
+    <p id="feedback"></p>
+    <a href="../index.html" class="back">⬅️ Back to Arcade</a>
+  </div>
+  <script src="cell.js"></script>
+</body>
+</html>

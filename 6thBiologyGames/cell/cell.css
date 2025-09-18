@@ -1,0 +1,78 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(135deg, #d0f0c0, #a0e0a0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.dropbox {
+  width: 180px;
+  height: 120px;
+  border: 2px dashed #333;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bold;
+  background: #f9f9f9;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.item {
+  background: #ffd6d6;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: grab;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+#feedback.correct {
+  color: green;
+  font-weight: bold;
+  animation: pop 0.5s ease-out;
+}
+
+#feedback.wrong {
+  color: red;
+  font-weight: bold;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%,60% { transform: translateX(-10px); }
+  40%,80% { transform: translateX(10px); }
+}

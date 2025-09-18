@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🍃 Photosynthesis Challenge</title>
+  <link rel="stylesheet" href="photosynthesis.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🍃 Photosynthesis Challenge</h1>
+    <p>Fill in the missing elements of photosynthesis!</p>
+    <p id="question">___ + ___ + Sunlight → Glucose + ___</p>
+    <div class="options">
+      <button onclick="checkAnswer('CO2','H2O','O2')">CO₂ + H₂O → O₂</button>
+      <button onclick="checkAnswer('H2O','CO2','O2')">H₂O + CO₂ → O₂</button>
+      <button onclick="checkAnswer('O2','CO2','H2O')">O₂ + CO₂ → H₂O</button>
+    </div>
+    <p id="feedback"></p>
+    <a href="../index.html" class="back">⬅️ Back to Arcade</a>
+  </div>
+  <script src="photosynthesis.js"></script>
+</body>
+</html>
