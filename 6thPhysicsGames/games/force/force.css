@@ -1,0 +1,37 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 420px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.options div {
+  background: #f0f8ff;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options div:hover {
+  background: #ffb3c6;
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 420px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.circuit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+}
+
+img {
+  width: 80px;
+  cursor: grab;
+}

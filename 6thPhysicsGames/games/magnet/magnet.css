@@ -1,0 +1,49 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.dropbox {
+  width: 200px;
+  height: 150px;
+  border: 2px dashed #333;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bold;
+  background: #f9f9f9;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.item {
+  background: #ffd6d6;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: grab;
+  font-weight: bold;
+}
