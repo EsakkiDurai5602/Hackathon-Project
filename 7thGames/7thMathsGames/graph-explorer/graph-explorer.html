@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📊 Graph Explorer</title>
+  <link rel="stylesheet" href="graph-explorer.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>📊 Graph Explorer</h1>
+    <p id="question">Loading...</p>
+
+    <div id="graph-area"></div>
+
+    <div class="options" id="options"></div>
+
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+
+    <button onclick="newQuestion()">Next ➡️</button>
+    <br><br>
+    <button onclick="goBack()">⬅️ Back to Maths Arcade</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="graph-explorer.js"></script>
+</body>
+</html>

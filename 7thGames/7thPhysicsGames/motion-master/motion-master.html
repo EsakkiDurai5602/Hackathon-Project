@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 Motion Master</title>
+  <link rel="stylesheet" href="motion-master.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🚀 Motion Master</h1>
+    <p id="question">Loading...</p>
+
+    <input type="number" id="answer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+
+    <button onclick="newQuestion()">Next ➡️</button>
+    <br><br>
+    <button onclick="goBack()">⬅️ Back to Physics Arcade</button>
+  </div>
+
+  <script src="motion-master.js"></script>
+</body>
+</html>

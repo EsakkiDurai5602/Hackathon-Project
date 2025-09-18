@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>⚔️ Integer Battle</title>
+  <link rel="stylesheet" href="integer-battle.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>⚔️ Integer Battle</h1>
+    <p>Choose the greater integer to win the battle!</p>
+
+    <div id="question"></div>
+
+    <div class="choices">
+      <button id="choice1" onclick="checkAnswer(1)"></button>
+      <button id="choice2" onclick="checkAnswer(2)"></button>
+    </div>
+
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+
+    <button onclick="newRound()">Next Battle ➡️</button>
+    <br><br>
+    <button onclick="goBack()">⬅️ Back to Maths Arcade</button>
+  </div>
+
+  <script src="integer-battle.js"></script>
+</body>
+</html>
+

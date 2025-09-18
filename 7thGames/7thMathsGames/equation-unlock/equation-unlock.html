@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🔓 Equation Unlock</title>
+  <link rel="stylesheet" href="equation-unlock.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🔓 Equation Unlock</h1>
+    <p id="equation">Loading...</p>
+
+    <input type="number" id="answer" placeholder="Enter value of x">
+    <button onclick="checkAnswer()">Unlock 🔑</button>
+
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+
+    <div class="chest" id="chest">🧳</div>
+
+    <button onclick="newRound()">Next Equation ➡️</button>
+    <br><br>
+    <button onclick="goBack()">⬅️ Back to Maths Arcade</button>
+  </div>
+
+  <script src="equation-unlock.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #55efc4, #00b894);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #636e72;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.game-card {
+  display: block;
+  text-decoration: none;
+  background: #ffeaa7;
+  color: #2d3436;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  background: #fdcb6e;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
